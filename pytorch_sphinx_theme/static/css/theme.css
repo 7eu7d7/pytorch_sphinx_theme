@@ -9498,7 +9498,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fd971f;
 }
 .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #a6e22e;
+  color: #96d323;
 }
 .highlight .sr {
   color: #a1efe4;
@@ -9522,10 +9522,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #66d9ef;
 }
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #a6e22e;
+  color: #96d323;
 }
 .highlight .ss {
-  color: #a6e22e;
+  color: #96d323;
 }
 
 
