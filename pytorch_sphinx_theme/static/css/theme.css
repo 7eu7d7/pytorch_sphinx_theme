@@ -10722,9 +10722,9 @@ article.pytorch-article .caution,
 article.pytorch-article .danger,
 article.pytorch-article .attention,
 article.pytorch-article .error {
-  background: #f3f4f7;
   margin-top: 1.875rem;
   margin-bottom: 1.125rem;
+  border-radius: 15px;
 }
 article.pytorch-article .note .admonition-title,
 article.pytorch-article .warning .admonition-title,
@@ -10736,13 +10736,17 @@ article.pytorch-article .caution .admonition-title,
 article.pytorch-article .danger .admonition-title,
 article.pytorch-article .attention .admonition-title,
 article.pytorch-article .error .admonition-title {
-  color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1.125rem;
-  padding: 3px 0 3px 1.375rem;
   position: relative;
-  font-size: 0.875rem;
+  top: -15px;
+  left: 35px;
+  display: inline-block;
+  min-width: 100px;
+  max-width: 318px;
+  padding: .3rem 0.6rem .3rem 1.7rem;
+  margin: -1rem -1rem -5rem -1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  color: black
 }
 article.pytorch-article .note .admonition-title:before,
 article.pytorch-article .warning .admonition-title:before,
@@ -10756,9 +10760,9 @@ article.pytorch-article .attention .admonition-title:before,
 article.pytorch-article .error .admonition-title:before {
   content: "\2022";
   position: absolute;
-  left: 9px;
+  left: 4px;
+  top: 3px;
   color: #ffffff;
-  top: 2px;
 }
 article.pytorch-article .note p:nth-child(n + 2),
 article.pytorch-article .warning p:nth-child(n + 2),
@@ -10884,45 +10888,109 @@ article.pytorch-article .error ul li,
 article.pytorch-article .error ol li {
   color: #262626;
 }
-article.pytorch-article .note p,
-article.pytorch-article .warning p,
-article.pytorch-article .tip p,
-article.pytorch-article .seealso p,
-article.pytorch-article .hint p,
-article.pytorch-article .important p,
-article.pytorch-article .caution p,
-article.pytorch-article .danger p,
-article.pytorch-article .attention p,
-article.pytorch-article .error p {
-  margin-top: 1.125rem;
+
+article.pytorch-article .note p {
+  color: #66ccff
+}
+article.pytorch-article .note {
+  background: #66ccff0d;
+  border: 2px solid #66ccff80;
 }
 article.pytorch-article .note .admonition-title {
-  background: #54c7ec;
+  background: #addef7;
+  border: 2px solid #66ccff80;
 }
-article.pytorch-article .warning .admonition-title {
-  background: #e94f3b;
+article.pytorch-article .note .admonition-title:before {
+  content: "🏷️";
+}
+
+article.pytorch-article .tip p {
+  color: #10b981
+}
+article.pytorch-article .tip {
+  background: #10b9810d;
+  border: 2px solid #10b98180;
 }
 article.pytorch-article .tip .admonition-title {
-  background: #6bcebb;
+  background: #a8e2ce;
+  border: 2px solid #10b98180;
 }
-article.pytorch-article .seealso .admonition-title {
-  background: #6bcebb;
+article.pytorch-article .tip .admonition-title:before {
+  content: "🏷️";
+}
+
+article.pytorch-article .hint p {
+  color: #74777f
+}
+article.pytorch-article .hint {
+  background: #74777f0d;
+  border: 2px solid #74777f80;
 }
 article.pytorch-article .hint .admonition-title {
   background: #a2cdde;
+  border: 2px solid #74777f80;
+}
+article.pytorch-article .hint .admonition-title:before {
+  content: "💡";
+}
+
+article.pytorch-article .seealso .admonition-title {
+  background: #6bcebb;
+}
+
+article.pytorch-article .caution p,
+article.pytorch-article .danger p {
+  color: #f43f5e
+}
+article.pytorch-article .caution,
+article.pytorch-article .danger {
+  background: #f43f5e0d;
+  border: 2px solid #f43f5e80;
+}
+article.pytorch-article .caution .admonition-title,
+article.pytorch-article .danger .admonition-title {
+  background: #f8c1cb;
+  border: 2px solid #f43f5e80;
+}
+article.pytorch-article .caution .admonition-title:before,
+article.pytorch-article .danger .admonition-title:before {
+  content: "☢️";
+}
+
+article.pytorch-article .important p {
+  color: #a53ff4
+}
+article.pytorch-article .important {
+  background: #a53ff40d;
+  border: 2px solid #a53ff480;
 }
 article.pytorch-article .important .admonition-title {
-  background: #5890ff;
+  background: #d4a1fb;
+  border: 2px solid #a53ff480;
 }
-article.pytorch-article .caution .admonition-title {
-  background: #f7923a;
+article.pytorch-article .important .admonition-title:before {
+  content: "🔔";
 }
-article.pytorch-article .danger .admonition-title {
-  background: #db2c49;
+
+article.pytorch-article .warning p,
+article.pytorch-article .attention p {
+  color: #eab308
 }
+article.pytorch-article .warning,
+article.pytorch-article .attention {
+  background: #eab3080d;
+  border: 2px solid #eab30880;
+}
+article.pytorch-article .warning .admonition-title,
 article.pytorch-article .attention .admonition-title {
-  background: #f5a623;
+  background: #f8e197;
+  border: 2px solid #f5a623;
 }
+article.pytorch-article .warning .admonition-title:before,
+article.pytorch-article .attention .admonition-title:before {
+  content: "⚠️";
+}
+
 article.pytorch-article .error .admonition-title {
   background: #cc2f90;
 }
